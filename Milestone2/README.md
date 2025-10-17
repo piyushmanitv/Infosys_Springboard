@@ -99,9 +99,13 @@ Author
 
 Piyushmani Tiwari
 B.Tech (Information Technology) — Government Engineering College, Bilaspur
+
 Email: piyushmanitiwari500@gmail.com
+
 GitHub: https://github.com/piyushmanitv
+
 LinkedIn: https://linkedin.com/in/piyushmani-tiwari-2349101a9
+
 
 
 License
