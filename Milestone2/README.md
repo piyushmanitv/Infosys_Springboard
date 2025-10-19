@@ -1,7 +1,7 @@
 Milestone 2 Project | Infosys Springboard AI Internship
 
 
-1. Project Overview
+#1. Project Overview
 
 
 CodeGenie is an interactive Jupyter/Colab-based system designed to benchmark and analyze multiple AI code generation models on programming prompts. It provides intuitive visual UIs using ipywidgets and powerful metric-based evaluations for code quality, maintainability, and generation performance. This project demonstrates the ability to run, compare, and visualize performance across various language models under consistent test conditions.
@@ -32,12 +32,18 @@ Follow the steps below to set up your environment:
 
 
 
+
+
 3. Hugging Face Authentication
+
+
 
   
 1. Visit https://huggingface.co/ and create an account.
 2. Navigate to Profile → Settings → Access Tokens and generate a token.
 3. Use the token in the Colab notebook for model authentication.
+
+
 
 
 
