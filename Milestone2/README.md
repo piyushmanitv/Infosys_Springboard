@@ -1,14 +1,13 @@
-CodeGenie – Model Benchmarking & Analysis Notebook
+<img width="825" height="464" alt="image" src="https://github.com/user-attachments/assets/9c86cc53-a514-49cd-8aeb-f093fac141a5" />CodeGenie – Model Benchmarking & Analysis Notebook
 
 
 Milestone 2 Project | Infosys Springboard AI Internship
 
 
-Overview
+1. Project Overview
 
 
 CodeGenie is an interactive Jupyter/Colab-based system designed to benchmark and analyze multiple AI code generation models on programming prompts. It provides intuitive visual UIs using ipywidgets and powerful metric-based evaluations for code quality, maintainability, and generation performance. This project demonstrates the ability to run, compare, and visualize performance across various language models under consistent test conditions.
-
 
 Key Features
 
@@ -22,67 +21,105 @@ Key Features
 Technologies Used
 
 
-Component	                                Description
-Python 3.12+	                         Core language
-Transformers / Tokenizers	          For AI code generation
-Pandas & NumPy	                  Data handling & metric storage
-Matplotlib & Seaborn	          Visualization of model performance
-Ipywidgets	                  Interactive UI for prompt-based benchmarking
-JSON	                          Metadata cleaning and notebook structure
+<img width="730" height="325" alt="image" src="https://github.com/user-attachments/assets/95076ce9-2d20-4707-aac1-8f52626cf9bd" />
 
 
-Notebook Structure
+2. Environment Setup
 
 
-Section 1–4: Model Loading and Utility Setup
+Follow the steps below to set up your environment:
+
+1. Open the notebook in Google Colab and enable GPU runtime for better performance.
+2. Install dependencies using the command:
+  •	!pip install transformers torch accelerate radon matplotlib ipywidgets
 
 
-Initializes and loads multiple pre-trained AI models for testing. Defines helper functions like generate_code(model, tokenizer, prompt) and calculate_advanced_metrics(code).
+
+3. Hugging Face Authentication
+
+  
+1. Visit https://huggingface.co/ and create an account.
+2. Navigate to Profile → Settings → Access Tokens and generate a token.
+3. Use the token in the Colab notebook for model authentication.
 
 
-Section 5: UI #1 – Benchmark All Models
+
+4. User Interface Overview
 
 
-Allows users to run a single prompt across all models simultaneously and displays generated code per model, time taken, and code metrics.
+The notebook includes an interactive UI built using ipywidgets. It allows users to select AI models via checkboxes, enter code prompts, and visualize comparative results of generated code snippets.
 
 
-Section 6: UI #2 – Inspect Selected Models
+Figure 1: Snapshot of the interactive benchmarking UI.
+
+<img width="1723" height="533" alt="image" src="https://github.com/user-attachments/assets/1036d0d0-ec32-4de3-b8c5-e8a0763cadba" />
 
 
-Introduces checkbox-based control for selecting specific models to run the benchmark.
+Figure 2: Snapshot of the interactive benchmarking UI.
+
+<img width="1773" height="744" alt="image" src="https://github.com/user-attachments/assets/9719e2f9-19f6-4020-b963-aaafaf43545d" />
 
 
-Section 7: Final Analysis and Visualization Report
 
 
-Summarizes all benchmark results with comprehensive data tables and comparative bar plots.
+5. Model Evaluation Metrics
 
 
-Section 8: Cleaning Widget Metadata
+Each model was evaluated on three key parameters to quantify performance differences.
 
 
-Ensures clean metadata for GitHub rendering by removing 'metadata.widgets.state'.
+<img width="738" height="254" alt="image" src="https://github.com/user-attachments/assets/823af298-5a9c-4fc9-91f9-81b026287444" />
 
 
-How to Use
+
+6. Comparative Model Analysis
 
 
-1️⃣ Run in Google Colab
+The benchmarking compared the outputs of Gemma-2B-IT, DeepSeek-Coder-1.3B, and StableCode. Each model was tested with identical prompts to evaluate output consistency and efficiency.
+  - Gemma-2B-IT: Balanced output with strong readability and efficient structure.
+  - DeepSeek-Coder-1.3B: High maintainability index and concise logic.
+  - StableCode: Produced minimal lines of code but slightly reduced readability.
 
 
-Upload the notebook to Google Colab, execute each cell sequentially, use UIs to run benchmarks, and generate the report in Section 7.
+
+7. Visualization
 
 
-2️⃣ Clean and Upload to GitHub
+The results were visualized using matplotlib graphs showing variation across metrics like complexity, maintainability, and LOC. These visualizations helped in identifying trade-offs between code compactness and readability.
 
 
-Run the metadata-cleaning code before uploading to ensure proper rendering on GitHub. Upload the cleaned notebook named 'cleaned_CodeGenie_Milestone2.ipynb'.
+8. Results and Insights
+
+  
+1. Gemma-2B-IT achieved the best balance between readability and complexity.
+2. DeepSeek-Coder-1.3B performed best in maintainability.
+3. StableCode optimized for brevity but required manual review for clarity.
+4. Visualization confirmed that a balance between readability and compactness leads to better software maintainability.
+
+
+9. Conclusion
+
+   
+This milestone highlights that code generation models exhibit distinct trade-offs. Gemma-2B-IT and DeepSeek-Coder-1.3B were the top-performing models due to their balanced output quality. StableCode, though efficient, showed a need for refinement in readability.
+
+
+
+10. References
+
+
+• Hugging Face Transformers Documentation
+• Radon Documentation for Code Metrics
+• Infosys CodeGenie Documents
+• Google Colab Documentation
+
 
 
 Example Output Summary
-Model	        Prompt	            Complexity	    Maintainability	    Gen Time (s)
-GPT-2  	  Fibonacci Series	        5.0              	78.2	              1.34
-CodeGen	  Factorial Program	        3.0	              85.7	              0.98
+
+
+Model	              Prompt	              Complexity	        Maintainability	        Gen Time (s)
+GPT-2  	      Fibonacci Series	            5.0                  	78.2	                  1.34
+CodeGen	      Factorial Program	            3.0	                  85.7	                  0.98
 
 
 Future Enhancements
