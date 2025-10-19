@@ -45,8 +45,6 @@ Follow the steps below to set up your environment:
 
 
 
-
-
 4. User Interface Overview
 
 
