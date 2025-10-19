@@ -1,6 +1,3 @@
-<img width="825" height="464" alt="image" src="https://github.com/user-attachments/assets/9c86cc53-a514-49cd-8aeb-f093fac141a5" />CodeGenie – Model Benchmarking & Analysis Notebook
-
-
 Milestone 2 Project | Infosys Springboard AI Internship
 
 
