@@ -42,9 +42,9 @@ Follow the steps below to set up your environment:
 
 
   
-1. Visit https://huggingface.co/ and create an account.
-2. Navigate to Profile → Settings → Access Tokens and generate a token.
-3. Use the token in the Colab notebook for model authentication.
+-> Visit https://huggingface.co/ and create an account.
+-> Navigate to Profile → Settings → Access Tokens and generate a token.
+-> Use the token in the Colab notebook for model authentication.
 
 
 
@@ -95,10 +95,10 @@ The results were visualized using matplotlib graphs showing variation across met
 8. Results and Insights
 
   
-1. Gemma-2B-IT achieved the best balance between readability and complexity.
-2. DeepSeek-Coder-1.3B performed best in maintainability.
-3. StableCode optimized for brevity but required manual review for clarity.
-4. Visualization confirmed that a balance between readability and compactness leads to better software maintainability.
+-> Gemma-2B-IT achieved the best balance between readability and complexity.
+-> DeepSeek-Coder-1.3B performed best in maintainability.
+-> StableCode optimized for brevity but required manual review for clarity.
+-> Visualization confirmed that a balance between readability and compactness leads to better software maintainability.
 
 
 9. Conclusion
