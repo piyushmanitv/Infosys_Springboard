@@ -28,7 +28,8 @@ Follow the steps below to set up your environment:
 
 -> Open the notebook in Google Colab and enable GPU runtime for better performance.  
 
--> Install dependencies using the command:
+-> Install dependencies using the command:  
+
   •	!pip install transformers torch accelerate radon matplotlib ipywidgets
 
 
@@ -43,79 +44,123 @@ Follow the steps below to set up your environment:
 
 
   
--> Visit https://huggingface.co/ and create an account.
--> Navigate to Profile → Settings → Access Tokens and generate a token.
--> Use the token in the Colab notebook for model authentication.
+  
+  -> Visit https://huggingface.co/ and create an account.  
+  
+  
+  -> Navigate to Profile → Settings → Access Tokens and generate a token.  
+  
+  
+  -> Use the token in the Colab notebook for model authentication.
 
 
 
 4. User Interface Overview
 
 
-The notebook includes an interactive UI built using ipywidgets. It allows users to select AI models via checkboxes, enter code prompts, and visualize comparative results of generated code snippets.
+The notebook includes an interactive UI built using ipywidgets. It allows users to select AI models via checkboxes, enter code prompts, and visualize comparative results of generated code snippets.  
 
 
-Figure 1: Snapshot of the interactive benchmarking UI.
+
+  
+  Figure 1: Snapshot of the interactive benchmarking UI.
 
 <img width="1723" height="533" alt="image" src="https://github.com/user-attachments/assets/1036d0d0-ec32-4de3-b8c5-e8a0763cadba" />
 
 
-Figure 2: Snapshot of the interactive benchmarking UI.
+
+    
+  Figure 2: Snapshot of the interactive benchmarking UI.
 
 <img width="1773" height="744" alt="image" src="https://github.com/user-attachments/assets/9719e2f9-19f6-4020-b963-aaafaf43545d" />
 
 
 
 
-5. Model Evaluation Metrics
+  
+  
+  5. Model Evaluation Metrics
 
 
-Each model was evaluated on three key parameters to quantify performance differences.
+
+  
+  Each model was evaluated on three key parameters to quantify performance differences.  
+  
 
 
 <img width="738" height="254" alt="image" src="https://github.com/user-attachments/assets/823af298-5a9c-4fc9-91f9-81b026287444" />
 
 
 
-6. Comparative Model Analysis
+  
+  
+  6. Comparative Model Analysis
 
 
-The benchmarking compared the outputs of Gemma-2B-IT, DeepSeek-Coder-1.3B, and StableCode. Each model was tested with identical prompts to evaluate output consistency and efficiency.
+  
+  The benchmarking compared the outputs of Gemma-2B-IT, DeepSeek-Coder-1.3B, and StableCode. Each model was tested with identical prompts to evaluate output consistency and efficiency.  
+  
   - Gemma-2B-IT: Balanced output with strong readability and efficient structure.
+    
   - DeepSeek-Coder-1.3B: High maintainability index and concise logic.
+    
   - StableCode: Produced minimal lines of code but slightly reduced readability.
+
+      
 
 
 
 7. Visualization
 
-
-The results were visualized using matplotlib graphs showing variation across metrics like complexity, maintainability, and LOC. These visualizations helped in identifying trade-offs between code compactness and readability.
-
-
-8. Results and Insights
+  
+  
+  
+  The results were visualized using matplotlib graphs showing variation across metrics like complexity, maintainability, and LOC. These visualizations helped in identifying trade-offs between code compactness and readability.  
+  
 
   
--> Gemma-2B-IT achieved the best balance between readability and complexity.
--> DeepSeek-Coder-1.3B performed best in maintainability.
--> StableCode optimized for brevity but required manual review for clarity.
--> Visualization confirmed that a balance between readability and compactness leads to better software maintainability.
+8. Results and Insights
+
+
+  
+  
+  -> Gemma-2B-IT achieved the best balance between readability and complexity.  
+  
+  
+  -> DeepSeek-Coder-1.3B performed best in maintainability.  
+  
+    
+  -> StableCode optimized for brevity but required manual review for clarity.  
+  
+  
+  -> Visualization confirmed that a balance between readability and compactness leads to better software maintainability.  
+  
 
 
 9. Conclusion
+   
 
    
-This milestone highlights that code generation models exhibit distinct trade-offs. Gemma-2B-IT and DeepSeek-Coder-1.3B were the top-performing models due to their balanced output quality. StableCode, though efficient, showed a need for refinement in readability.
+  
+  This milestone highlights that code generation models exhibit distinct trade-offs. Gemma-2B-IT and DeepSeek-Coder-1.3B were the top-performing models due to their balanced output quality. StableCode, though efficient, showed a need for refinement in readability.  
+  
 
 
 
+  
 10. References
 
 
-• Hugging Face Transformers Documentation
-• Radon Documentation for Code Metrics
-• Infosys CodeGenie Documents
-• Google Colab Documentation
+
+  
+• Hugging Face Transformers Documentation  
+
+• Radon Documentation for Code Metrics  
+
+• Infosys CodeGenie Documents  
+
+• Google Colab Documentation  
+
 
 
 
@@ -129,16 +174,23 @@ CodeGen	      Factorial Program	            3.0	                  85.7	         
 
 Future Enhancements
 
+  
 
-• Integrate LLM evaluation metrics like BLEU or CodeBLEU.
-• Add syntax error detection with AST parsing.
-• Allow CSV export of all results automatically.
-• Add multi-threaded prompt execution for faster comparisons.
+• Integrate LLM evaluation metrics like BLEU or CodeBLEU.  
+  
+• Add syntax error detection with AST parsing.  
+
+• Allow CSV export of all results automatically.  
+
+• Add multi-threaded prompt execution for faster comparisons.  
 
 
-Author
+
+Author  
 
 
+
+  
 Piyushmani Tiwari
 B.Tech (Information Technology) — Government Engineering College, Bilaspur
 
