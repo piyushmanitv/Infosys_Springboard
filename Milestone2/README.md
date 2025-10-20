@@ -167,9 +167,8 @@ The notebook includes an interactive UI built using ipywidgets. It allows users 
 Example Output Summary
 
 
-Model	              Prompt	              Complexity	        Maintainability	        Gen Time (s)
-GPT-2  	      Fibonacci Series	            5.0                  	78.2	                  1.34
-CodeGen	      Factorial Program	            3.0	                  85.7	                  0.98
+<img width="732" height="190" alt="image" src="https://github.com/user-attachments/assets/29c452d5-007f-4241-a20d-5b13dc5445ce" />
+
 
 
 Future Enhancements
