@@ -26,10 +26,13 @@ Technologies Used
 
 Follow the steps below to set up your environment:
 
-1. Open the notebook in Google Colab and enable GPU runtime for better performance.
-2. Install dependencies using the command:
+-> Open the notebook in Google Colab and enable GPU runtime for better performance.
+-> Install dependencies using the command:
   •	!pip install transformers torch accelerate radon matplotlib ipywidgets
 
+
+
+  
 
 
 
